@@ -189,6 +189,56 @@ main {
     opacity: 1;
 }
 
+.quote-section {
+    background-color: #C271FF; 
+    padding: 108px 237px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: #FFFFFF; 
+    text-align: left;
+}
+
+.quote-content {
+    display: flex; 
+    align-items: center; 
+    gap: 53px; 
+    max-width: 943px; 
+    margin: 0 auto; 
+}
+
+.quote-image-container img {
+    width: 160px; 
+    height: 160px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    flex-shrink: 0; 
+}
+
+.quote-text-container blockquote {
+    font-size: 22px; 
+    font-weight: normal;
+    color: #FFFFFF; 
+    line-height: 33.6px; 
+    margin: 0; 
+    margin-bottom: 22px; 
+}
+
+.quote-text-container h3 {
+    font-size: 22px; 
+    font-weight: bold; 
+    color: #FFFFFF; 
+    margin: 0; 
+    margin-bottom: 0; 
+}
+
+.quote-text-container p {
+    font-size: 22px; 
+    font-style: italic; 
+    color: #FFFFFF; 
+    margin: 0; 
+}
+
 @media (max-width: 768px) {
     header nav {
         flex-direction: column;

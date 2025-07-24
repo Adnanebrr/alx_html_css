@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif; /* Assumed font */
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    background-color: #28203D;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10; 
+    background-color: transparent; 
+    padding: 20px 0;
+    position: absolute; top: 0; left: 0;
+}
+
+header nav {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    gap: 53px; 
+}
+
+header nav img {
+    height: 29.46px; 
+    width: 167.02px; 
+    object-fit: contain;
+    opacity: 1;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 53px; 
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 12px; 
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease;
+}
+
+header nav ul li a:hover {
+    opacity: 0.8;
+}
+
+main {
+    
+}
+
+.banner-section {
+    min-height: 1093px; 
+    background-image: url('Images/Object.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: #28203D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    color: white;
+    padding: 0; 
+    position: relative; 
+    padding-top: 84.48px;
+}
+
+.banner-content-top {
+    margin-bottom: 80px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-content-top h1 {
+    font-family: 'Spin Cycle OT', sans-serif;
+    font-size: 6rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: -50px;
+    text-transform: uppercase;
+}
+
+.banner-slogan {
+    display: flex; 
+    justify-content: center; 
+    align-items: baseline; 
+    margin-top: 38px; 
+    margin-bottom: 38px;  
+}
+
+.banner-slogan span { 
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 0 15px; 
+    line-height: 1; 
+    font-size: 1.2rem;
+    
+}
+
+.banner-content-top button {
+    background-color: #C271FF;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 20px 13px;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+   
+    transition: opacity 0.3s ease;
+}
+
+.banner-content-top button:hover {
+    opacity: 0.9;
+}
+
+.banner-pros-section {
+    /* This is a container for the h2 and pros-grid */
+}
+
+.banner-pros-section h2 {
+    font-size: 32px;
+    font-weight: lighter;
+    color: #FFFFFF;
+    margin-bottom: 87px;
+}
+
+.banner-pros-section h2 .learn-color {
+    color: #C271FF;
+}
+
+.pros-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 136px;
+    margin-top: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pro-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    text-align: center;
+}
+
+.pro-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.pro-card h3 {
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 2px;
+    color: #FFFFFF;
+}
+
+.pro-card p {
+    font-size: 16px;
+    font-style: italic;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header nav ul {
+        gap: 15px;
+    }
+
+    .banner-content-top h1 {
+        font-size: 3.5rem;
+    }
+
+    .banner-content-top span {
+        font-size: 1.2rem;
+    }
+
+    .banner-content-top button {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+
+    .banner-pros-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .pros-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-content-top h1 {
+        font-size: 2.5rem;
+    }
+    .banner-content-top span {
+        font-size: 1rem;
+    }
+}

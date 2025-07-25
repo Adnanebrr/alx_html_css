@@ -239,6 +239,142 @@ main {
     margin: 0; 
 }
 
+
+
+.videos-grid {
+    display: grid; 
+    grid-template-columns: repeat(4, 255px); 
+    gap: 30px; 
+    max-width: 1228px; 
+    margin: 0 auto; 
+    padding: 50px 58px 0 58px; 
+}
+
+.video-card {
+    width: 255px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF; 
+    padding: 0; 
+    text-align: left; 
+}
+
+.video-card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #071629;
+    margin: 0; 
+    margin-bottom: 6.7px; 
+    padding: 15px 15px 0 15px; 
+}
+
+.video-card p {
+    font-size: 14px;
+    font-weight: normal;
+    color: rgba(7, 22, 41, 0.5016); 
+    line-height: 24px;
+    margin: 0; 
+    margin-bottom: 15.4px; 
+    padding: 0 15px; 
+}
+
+.video-author h4 {
+    font-size: 14px;
+    font-weight: 600; 
+    color: #C271FF;
+    margin: 0; 
+}
+
+.video-rating .video-duration {
+    font-size: 14px;
+    font-weight: 600; 
+    color: #C271FF;
+    margin: 0; 
+}
+
+.videos-list-section {
+    background-color: #FFFFFF; 
+    padding: 100px 0; 
+    text-align: center; 
+}
+
+.videos-list-title {
+    font-size: 32px;
+    font-weight: lighter; 
+    color: #071629; 
+    margin: 0 auto 30px auto;
+    max-width: fit-content;
+}
+
+.videos-list-title .popular-color {
+    font-weight: bold; 
+    color: #C271FF; 
+}
+
+.video-thumbnail-container {
+    position: relative; 
+    width: 255px; 
+    height: 154px; 
+    overflow: hidden; 
+}
+
+.video-thumbnail-container img:first-child { 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+}
+
+.video-author {
+    display: flex;
+    align-items: center; 
+    gap: 13px; 
+    padding: 0 15px; 
+    margin-bottom: 10px; 
+}
+
+.video-author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.video-rating {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    
+    padding: 0 15px 15px 15px; 
+}
+
+.video-rating .stars {
+    display: flex;
+    gap: 8px; 
+}
+
+.video-rating .stars i {
+    font-size: 15px; 
+    width: 15px; 
+    height: 15px; 
+    color: #D8D8D8; 
+}
+
+.video-rating .stars i.active-star {
+    color: #C271FF; 
+}
+
 @media (max-width: 768px) {
     header nav {
         flex-direction: column;

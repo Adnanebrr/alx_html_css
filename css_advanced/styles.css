@@ -375,6 +375,82 @@ main {
     color: #C271FF; 
 }
 
+
+.membership-section {
+    background-color: #071629; 
+    padding: 52px 164px; 
+    text-align: center; 
+    color: #FFFFFF; 
+}
+.membership-title {
+    font-size: 32px;
+    font-weight: lighter; 
+    color: #FFFFFF; 
+    margin: 0 auto 30px auto; 
+    max-width: fit-content;
+}
+.membership-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 257px); 
+    gap: 27px; 
+    max-width: fit-content; 
+    margin: 50px auto 50px auto;
+}
+
+.membership-title .free-color {
+    font-weight: bold; 
+    color: #C271FF; 
+}
+
+.membership-card {
+    width: 257px; 
+    text-align: center; 
+    
+}
+
+
+.membership-card img {
+    width: 43.67px;
+    height: 35.35px;
+    margin: 0 auto 26.62px auto; 
+    display: block; 
+}
+
+.membership-card h3 {
+    font-size: 18px;
+    font-weight: 600; 
+    color: #FFFFFF;
+    margin: 0 auto 13px auto; 
+}
+
+.membership-card p {
+    font-size: 14px;
+    font-weight: normal;
+    color: #FFFFFF;
+    line-height: 26px;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+.membership-button {
+    background-color: #C271FF;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600; 
+    padding: 13px 20px; 
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    margin: 0 auto; 
+    display: block; 
+    transition: opacity 0.3s ease;
+}
+
+.membership-button:hover {
+    opacity: 0.9;
+}
+
+
 @media (max-width: 768px) {
     header nav {
         flex-direction: column;
@@ -414,5 +490,32 @@ main {
     }
     .banner-content-top span {
         font-size: 1rem;
+    }
+}
+@media (max-width: 768px) {
+    /* ... existing rules ... */
+
+    .membership-section {
+        padding: 50px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .membership-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+        gap: 20px;
+        margin-top: 50px; /* Adjust top margin */
+        margin-bottom: 50px; /* Adjust bottom margin */
+        max-width: 100%;
+    }
+
+    .membership-card {
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    /* ... existing rules ... */
+
+    .membership-grid {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
     }
 }

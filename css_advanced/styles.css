@@ -501,6 +501,55 @@ main {
     text-align: left; 
 }
 
+.main-footer {
+    background-color: #071629; 
+    padding: 90px 160px 50px 160px; 
+    color: #FFFFFF; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     min-height: 250px; 
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1112px; 
+    margin: 0; 
+}
+
+.footer-logo {
+    width: 169px; 
+    height: 30px; 
+    object-fit: contain; 
+}
+
+.social-icons {
+    display: flex; 
+    gap: 20px; 
+    align-items: center; 
+}
+
+.social-icons i {
+    font-size: 30px; 
+    color: #FFFFFF; 
+    cursor: pointer; 
+    transition: opacity 0.3s ease;
+}
+
+.social-icons i:hover {
+    opacity: 0.8;
+}
+
+.copyright-text {
+    font-size: 12px; 
+    font-weight: normal; 
+    color: #FFFFFF; 
+    margin: 0; 
+}
+
 @media (max-width: 768px) {
     header nav {
         flex-direction: column;
@@ -535,6 +584,13 @@ main {
 }
 
 @media (max-width: 480px) {
+    .main-footer {
+        padding: 30px 15px;
+    }
+
+    .footer-content {
+        gap: 20px;
+    }
     .banner-content-top h1 {
         font-size: 2.5rem;
     }
@@ -543,6 +599,32 @@ main {
     }
 }
 @media (max-width: 768px) {
+        .main-footer {
+        padding: 50px 20px; 
+    }
+
+    .footer-content {
+        flex-direction: column; 
+        gap: 30px; 
+        margin-bottom: 40px; 
+    }
+
+    .footer-logo {
+        width: 120px; 
+        height: auto;
+    }
+
+    .social-icons {
+        gap: 15px; 
+    }
+
+    .social-icons i {
+        font-size: 24px;
+    }
+
+    .copyright-text {
+        font-size: 10px; 
+    }
     
     .faq-section {
         padding: 50px 20px; 
